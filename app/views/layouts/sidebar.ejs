@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+     <link rel="stylesheet" href="stylesheets/main.css">   
+     <link rel="stylesheet" href="stylesheets/normalize.css">
+     <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+     <link rel="stylesheet" href="stylesheets/all.css">
+     <link rel="stylesheet" href="stylesheets/custom.css">
+     <link rel="stylesheet" href="stylesheets/main.css">   
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <%- include('../partials/header.ejs')%>
+        <div class="layout-sidebar">
+        <side><%- include('../partials/treeview.ejs')%></side>
+        <main> 
+        
+   
+    <%-body %>
+        </main>
+
+    </div>
+        <%- include('../partials/footer.ejs')%>
+    </div>
+
+      
+  <script type="text/javascript" src="javascripts/modernizr-3.11.2.min.js"></script>
+  <script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+  <script type="text/javascript" src="javascripts/plugins.js"></script>
+</body>
+</html>

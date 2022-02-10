@@ -1,0 +1,259 @@
+/*กำหนดค่า Grid*/
+.grid1 { grid-area: header; }
+.grid2 { grid-area: menu; }
+.grid3 { grid-area: main; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'header header header header header header'
+    'menu menu menu main main main';
+    grid-gap: 2px;
+    background-image: linear-gradient(to bottom,rgb(248, 250, 252),rgb(206, 225, 248));
+    padding: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
+    height: 100vh;
+}
+.grid-container > div {
+    background-image: linear-gradient(to bottom,rgb(248, 250, 252),rgb(206, 225, 248));
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+/*Grid1*/
+.grid1{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+}
+/*จัดรูปแบบGrid1*/
+.SiteID{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SiteName{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SiteCode{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SiteType{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SiteLocation{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SiteLatitude{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SiteLongtitude{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SiteElevation{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SID2File{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SID2File div{
+    display: inline;
+}
+.SID2File div #SID2File1-4{
+    display: inline;
+}
+.SID4Calib{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SID4Calib div{
+    display: inline;
+}
+.SID4Calib div #SID4Calib1-4{
+    display: inline;
+}
+.CalcAPos{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+    margin: 0 5px 5px 5px;
+}
+.mainCalcAPos{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.CalcAPossitive{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.CalcAPossitive div{
+    display: inline;
+}
+.CalcANeg{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+    margin: 0 5px 5px 5px;
+}
+.mainCalcANeg{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.CalcANegative{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.CalcANegative div{
+    display: inline;
+}
+/*จัดตำแหน่งGrid1*/
+#SID2File1-2{
+    padding-right: 55px;
+}
+#SID2File1-3{
+    padding-right: 49px;
+}
+#SID2File1-4{
+    padding-left: 10px;
+}
+#SID4Calib1-2{
+    padding-right: 50px;
+}
+#SID4Calib1-3{
+    padding-right: 50px;
+}
+#SID4Calib1-4{
+    padding-left: 10px;
+}
+#SiteName1-1{
+    padding-right: 40px;
+}
+#SiteName1-2{
+    width: 454px;
+}
+#SiteCode1-1{
+    padding-right: 43.5px;
+}
+#SiteCode1-2{
+    width: 455.5px;
+}
+#SiteType1-1{
+    padding-right: 46px;
+}
+#SiteType1-2{
+    width: 462.5px;
+}
+#SiteLocation1-1{
+    padding-right: 49px;
+}
+#SiteLocation1-2{
+    width: 455px;
+}
+#SiteLatitude1-1{
+    padding-right: 52.5px;
+}
+#SiteLatitude1-2{
+    width: 455px;
+}
+#SiteLongtitude1-1{
+    padding-right: 36.5px;
+}
+#SiteLongtitude1-2{
+    width: 455px;
+}
+#SiteElevation1-1{
+    padding-right: 45px;
+}
+#SiteElevation1-2{
+    width: 455px;
+}
+
+/*Grid2*/
+.grid2{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+}
+/*จัดรูปแบบGrid2*/
+.mainBTLinMinute{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.TimebaseinMinute{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+#addMinute{
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-left:20px ;
+    background-color: rgb(233, 233, 230);
+    transition-duration: 0.5s;
+}
+#addMinute:hover {
+    background-color: #ff9b04;
+    color: rgb(0, 0, 0);
+}
+/*จัดตำแหน่งGrid2*/
+#TimebaseinMinute1-1{
+    padding-right: 50px;
+}
+#TimebaseinMinute1-2{
+    width: 150px;
+}
+
+/*Grid3*/
+.grid3{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+}
+/*จัดรูปแบบGrid3*/
+.mainBTLinSecond{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.TimebaseinSecond{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+#addSecond{
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-left:20px ;
+    background-color: rgb(233, 233, 230);
+    transition-duration: 0.5s;
+}
+#addSecond:hover {
+    background-color: #ff9b04;
+    color: rgb(0, 0, 0);
+}
+/*จัดตำแหน่งGrid3*/
+#TimebaseinSecond1-1{
+    padding-right: 50px;
+}
+#TimebaseinSecond1-2{
+    width: 150px;
+}

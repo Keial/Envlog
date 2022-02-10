@@ -1,0 +1,233 @@
+/*กำหนดค่า Grid*/
+.grid1 { grid-area: header; }
+.grid2 { grid-area: menu; }
+.grid3 { grid-area: main; }
+.grid4 { grid-area: right; }
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header menu menu menu'
+    'main main main main main main'
+    'right right right right right right';
+    grid-gap: 2px;
+    background-image: linear-gradient(to bottom,rgb(248, 250, 252),rgb(206, 225, 248));
+    padding: auto;
+    height : 100vh
+}
+
+.grid-container > div {
+    background-image: linear-gradient(to bottom,rgb(248, 250, 252),rgb(206, 225, 248));
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+/*grid1*/
+.grid1{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+}
+/*จัดรูปแบบgrid1*/
+.mainInit{
+    font-size: 18px;
+    padding: 2px 0px 5px 5px;
+    text-align: left;
+}
+.EnaCalibra{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.ZeroFact{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.ZeroFact div{
+    display: inline;
+}
+.mainFact{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.mainFact div{
+    display: inline;
+}
+/* จัดตำแหน่งGrid1 */
+#ZeroOff1-2{
+    padding-right: 50px;
+}
+#ZeroOff1-3{
+    width: 300px;
+}
+#Factor1-2{
+    padding-right: 81px;
+}
+#Factor1-3{
+    width: 300px;
+}
+
+/*grid2*/
+.grid2{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+}
+/*จัดรูปแบบgrid2*/
+.mainValidation{
+    font-size: 18px;
+    padding: 2px 5px 5px 5px;
+    text-align: left;
+}
+.mainSpanDiff{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.mainSpanDiff div{
+    display: inline;
+}
+.mainZerodiff{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+/* จัดตำแหน่งGrid2 */
+#SpanDiff1-2{
+    width: 230px;
+}
+#SpanDiff1-1{
+    padding-right: 40px;
+    margin-right: 80px;
+    margin-left: 10px;
+}
+#Zerodiff1-1{
+    padding-right: 136px;
+    margin-left: 10px;
+}
+#Zerodiff1-2{
+    width: 230px;
+}
+#FactorLow1-1{
+    padding-right: 204px;
+    margin-left: 10px;
+}
+#FactorLow1-2{
+    width: 230px;
+}
+#FactorHigh1-1{
+    padding-right: 201px;
+    margin-left: 10px;
+}
+#FactorHigh1-2{
+    width: 230px;
+}
+
+/*grid3*/
+.grid3{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+}
+/*จัดรูปแบบgrid3*/
+.CalibrationFail{
+    font-size: 18px;
+    padding: 2px 5px 5px 5px;
+    text-align: left;
+}
+.SMStoOut{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SMStoOk{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.DigitalOut{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.mainUseEPA{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+    margin: 20px 3px 8px 3px;
+}
+.SetCHStatToOOCZero{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SetCHStatToOOCZero div{
+    display: inline;
+}
+.SetCHStatToOOCNumber{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.SetCHStatToOOCNumber div{
+    display: inline;
+}
+/* จัดตำแหน่งGrid3 */
+#SMStoOut1-2{
+    padding-right: 50px;
+}
+#SMStoOk1-2{
+    padding-right: 50px;
+}
+#DigitalOut1-1{
+    padding-right: 50px;
+    margin-left: 4px;
+}
+#DigitalOut1-2{
+    padding-right: 300px;
+}
+#SetCHStatToOOCZero1-2{
+    padding-right: 80px;
+}
+#SetCHStatToOOCZero1-3{
+    width: 230px;
+}
+#SetCHStatToOOCNumber1-2{
+    padding-right: 323px;
+}
+#SetCHStatToOOCNumber1-3{
+    width: 230px;
+}
+
+/*grid4*/
+.grid4{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+}
+/*จัดรูปแบบgrid4*/
+.mainAddcalibration{
+    font-size: 18px;
+    padding: 2px 5px 5px 5px;
+    text-align: left;
+}
+.SelectSeq{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+/* จัดตำแหน่งGrid4 */
+#SelectSeq1-1{
+    padding-right: 39px;
+    margin-left: 4px;
+}
+#SelectSeq1-2{
+    padding-right: 293px;
+}
+/*จัดรูปแบบและกำหนดค่าปุ่มAddCalibration*/
+#addCalibration{
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-right: 0px;
+    margin-top: 35px;
+    margin-left:-10px ;
+    background-color: rgb(233, 233, 230);
+    transition-duration: 0.5s;
+}
+#addCalibration:hover {
+    background-color: #ff9b04;
+    color: rgb(0, 0, 0);
+  }

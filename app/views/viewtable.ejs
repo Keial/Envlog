@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="10">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Note: Try to remove the following lines to see the effect of CSS positioning */
+    .affix {
+      top: 0;
+      z-index: 9999 !important;
+      opacity: 0.4;
+    }
+    .affix:hover {
+      opacity: 1;
+    }
+    @page { margin: 0; size: auto; }
+    </style>
+
+    <style media="print">
+      body {
+        zoom: 50%;
+      }
+      .print {
+        visibility: hidden;
+      }
+    </style>
+
+
+  <title>datatable</title>
+</head>
+
+<body >
+  <div class="container-fluid" id="test" >
+    <nav class="navbar navbar-expand-lg navbar-light" style="background: linear-gradient(180deg, rgba(82,151,217,1) 19%, rgba(229,241,255,1) 100%)";>
+      
+      <a class="navbar-brand" href="#">AIR QUALITY<br>SENSOR</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b>HOME</b><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#"><b>DATA</b></a>
+            
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/history/get"><b>HISTORY</b></a>
+          </li>    
+      </div>
+
+    </nav>
+    
+    <figure class="text-center">
+        <h2>DATA SITE : TEST</h2>
+    </figure>
+
+    <button class="btn btn-primary print" type="button" onclick="document.title = 'Hello';window.print()" data-spy="affix" data-offset-top="150">Dowmload PDF</button>
+
+    <div class="info-body">
+      <table class="table table-bordered">
+        <thead style="background-color: rgba(116,178,238,1)";>
+          <tr>
+            <th>SITE</th>
+            <th>DATE TIME</th>
+            <th>CHANNEL</th>
+            <th>UNITS</th>
+            <th>RAW VAL.</th>
+            <th>INSTANT.</th>
+            <th>STATUS</th>
+            <th>1 MIN.</th>
+            <th>STATUS</th>
+            <th>5 MIN.</th>
+            <th>STATUS</th>
+            <th>10 MIN.</th>
+            <th>STATUS</th>
+            <th>30 MIN.</th>
+            <th>STATUS</th>
+            <th>60 MIN.</th>
+            <th>STATUS</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tbody style="background-color: #e3f2fd";>
+          <% dataconfig.forEach(function(sensor, i){ %>
+            <!-- สั่ง loop จากที่เราส่งมาจาก server -->
+            <tr>
+              <td>
+                <%= sensor.site %> 
+              </td>
+              <td>
+                <%= String(dataraws[0].datetime).substring(4,24) %>
+              </td>
+              <td>
+                <%= sensor.channel %>  
+              </td>
+              <td>
+                <%= sensor.unit %>     
+              </td>
+              <td>
+                <%= eval(`dataraws[0].data${i+1}`) %>
+              </td>
+              <td>
+                <%= parseFloat(eval(`dataraws[0].data${i+1}`)).toFixed(2); %>
+              </td>
+              <td>
+                <%= eval(`dataraws[0].status${i+1}`) %>
+              </td>
+              <td>
+                <%= eval(`data1min[0].data${i+1}`) %>
+              </td>
+              <td>
+                <%= eval(`data1min[0].status${i+1}`) %>
+              </td>
+              <td>
+                <%= eval(`data5min[0].data${i+1}`) %>
+              </td>
+              <td>
+                <%= eval(`data5min[0].status${i+1}`) %>
+              </td>
+              <td>
+                <%= eval(`data10min[0].data${i+1}`) %>
+              </td>
+              <td>
+                <%= eval(`data10min[0].status${i+1}`) %>
+              </td>
+              <td>
+                <%= eval(`data30min[0].data${i+1}`) %>
+              </td>
+              <td>
+                <%= eval(`data30min[0].status${i+1}`) %>
+              </td>
+              <td>
+                <%= eval(`data60min[0].data${i+1}`) %>
+              </td>
+              <td>
+                <%= eval(`data60min[0].status${i+1}`) %>
+              </td>
+            </tr>
+
+           a
+            <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

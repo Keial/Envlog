@@ -1,0 +1,58 @@
+.IG1 {
+     grid-area: header;
+     overflow: hidden;
+     position: static;
+    }
+.IG2 {
+     grid-area: side;
+    
+     position: static;
+     overflow: hidden;
+    }
+.IG3 {
+     grid-area: body; 
+     
+     position: static;
+     overflow: hidden;
+    }
+
+.IplanLayout{
+    height: 100vh;
+    width: 100vw ;
+    display: grid;
+    padding: 0;
+    margin: 0;
+    grid-template-areas: "header header"
+                         "side body";
+    grid-template-columns: 250px auto;
+    grid-template-rows: 118px  auto;
+    
+    grid-gap: 1px;
+    position: static;
+}
+
+
+
+#Iheader {
+    width: 100vw;
+    background-color: springgreen;
+   
+    
+}
+
+#ISide {
+    background-color: skyblue;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   
+
+}
+
+#IBody {
+    background-color: wheat;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+   
+}

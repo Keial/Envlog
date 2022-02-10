@@ -1,0 +1,278 @@
+/*กำหนดค่า Grid*/
+.grid1 { grid-area: header; }
+.grid2 { grid-area: menu; }
+.grid3 { grid-area: main; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'menu menu menu menu menu menu'
+    'main main main main main main';
+    grid-gap: 2px;
+    background-image: linear-gradient(to bottom,rgb(248, 250, 252),rgb(206, 225, 248));
+    padding: auto;
+}
+.grid-container > div {
+    background-image: linear-gradient(to bottom,rgb(248, 250, 252),rgb(206, 225, 248));
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+  /*grid1*/
+  .grid1{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+}
+  /*จัดรูปแบบgrid1*/
+  .mainAddsite{
+    font-size: 18px;
+    padding: 2px 0px 5px 5px;
+    text-align: left;
+}
+.SiteName{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.Locate{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+#addSite{
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-left:-1200px ;
+    background-color: rgb(233, 233, 230);
+    transition-duration: 0.5s;
+}
+#addSite:hover {
+    background-color: #ff9b04;
+    color: rgb(0, 0, 0);
+}
+/*จัดตำแหน่งgrid1*/
+#SiteName1-1{
+    padding-right: 201px;
+    margin-left: 10px;
+}
+#SiteName1-2{
+    width: 361.5px;
+}
+#Locate1-1{
+    padding-right: 210px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#Locate1-2{
+    width: 361.5px;
+}
+/*grid2*/
+.grid2{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+}
+/*จัดรูปแบบgrid2*/
+.mainExport{
+    font-size: 18px;
+    padding: 2px 0px 5px 5px;
+    text-align: left;
+}
+#as1{
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: rgb(233, 233, 230);
+    transition-duration: 0.5s;
+}
+#as1:hover{
+    background-color: #ff9b04;
+    color: rgb(0, 0, 0);
+}
+#as2{
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: rgb(233, 233, 230);
+    transition-duration: 0.5s;
+}
+#as2:hover{
+    background-color: #ff9b04;
+    color: rgb(0, 0, 0);
+}
+#as3{
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: rgb(233, 233, 230);
+    transition-duration: 0.5s;
+}
+#as3:hover{
+    background-color: #ff9b04;
+    color: rgb(0, 0, 0);
+}
+.ExportP{
+    font-size: 15px;
+    padding: 20px 5px 20px 10px;
+    text-align: left;
+}
+.FileName{
+    font-size: 15px;
+    padding: 20px 5px 20px 10px;
+    text-align: left;
+}
+.mainFileName{
+    font-size: 18px;
+    padding: 2px 0px 5px 5px;
+    text-align: left;
+}
+/*จัดตำแหน่งgrid2*/
+#Folder1-1{
+    margin-left: 90%;
+    margin-top: -50px;
+}
+#Folder1-2{
+    margin-left: 90%;
+    margin-top: -65px;
+}
+#Folder1-3{
+    margin-right: 89%;
+    margin-top: 10px;
+}
+#ExportP1-1{
+    width: 1000px;
+    margin-left: 10px;
+}
+#FileName1-1{
+    width: 361.5px;
+    margin-left: 10px;
+}
+
+
+
+
+/*grid3*/
+.grid3{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+}
+.checkExport{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+    margin-right: 60%;
+    margin-left: 5px;
+    margin-top: -15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.mainImport{
+    font-size: 18px;
+    padding: 10px 0px 5px 5px;
+    text-align: left;
+}
+#as1Im{
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: rgb(233, 233, 230);
+    transition-duration: 0.5s;
+}
+#as1Im:hover{
+    background-color: #ff9b04;
+    color: rgb(0, 0, 0);
+}
+#as2Im{
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: rgb(233, 233, 230);
+    transition-duration: 0.5s;
+}
+#as2Im:hover{
+    background-color: #ff9b04;
+    color: rgb(0, 0, 0);
+}
+#as3Im{
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: rgb(233, 233, 230);
+    transition-duration: 0.5s;
+}
+#as3Im:hover{
+    background-color: #ff9b04;
+    color: rgb(0, 0, 0);
+}
+.ImportP{
+    font-size: 15px;
+    padding: 20px 5px 20px 10px;
+    text-align: left;
+}
+.FileNameIm{
+    font-size: 15px;
+    padding: 10px 5px 20px px;
+    text-align: left;
+}
+/*จัดรูปแบบgrid3*/
+.checkExport1{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.checkExport1 div{
+    display: inline;
+}
+.checkExport2{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.checkExport2 div{
+    display: inline;
+}
+.checkExport3{
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+.checkExport3 div{
+    display: inline;
+}
+
+/*จัดตำแหน่งgrid3*/
+#setExportSite1-1{
+    margin-left: 10px;
+}
+#setExportUser1-1{
+    margin-left: 120px;
+}
+#setExportAlert1-1{
+    margin-left: 110px;
+}
+#setExportCommu1-1{
+    margin-left: 10px;
+}
+#setExportSRec1-1{
+    margin-left: 47px;
+}
+#setExportSeq1-1{
+    margin-left: 10px;
+}
+#setExportVRec1-1{
+    margin-left: 86px;
+}
+#FolderIm1-1{
+    margin-left: 90%;
+    margin-top: -48px;
+}
+#FolderIm1-2{
+    margin-left: 90%;
+    margin-top: -77px;
+}
+#FolderIm1-3{
+    margin-right: 89.5%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#ImportP1-1{
+    width: 1000px;
+    margin-left: 10px;
+}
+#FileNameIm1-1{
+    width: 361.5px;
+    margin-left: 20px;
+    margin-top: 20px;
+}

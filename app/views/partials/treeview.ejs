@@ -1,0 +1,70 @@
+
+
+ 	<link rel="stylesheet" href ="stylesheets/demo.css" />
+ 	<link rel="stylesheet" href ='stylesheets/zTreeStyle.css' />
+	<script type="text/javascript" src="javascripts/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.ztree.core.min.js"></script>
+
+	<SCRIPT type="text/javascript">
+		var setting = {
+			data: {
+				key: {
+					title:"t"
+				},
+				simpleData: {
+					enable: true
+				}
+			},
+			callback: {
+				beforeClick: beforeClick,
+				onClick: onClick
+			}
+		};
+
+		var zNodes = <%-JSON.stringify(zNodes)%>;
+
+		$(document).ready(function(){
+			$.fn.zTree.init($("#treeDemo"), setting, zNodes);
+		});
+
+		console.log("===>"+JSON.stringify(setting));
+
+		var log, className = "dark";
+function beforeClick(treeId, treeNode, clickFlag) {
+    className = (className === "dark" ? "":"dark");
+    showLog("[ "+getTime()+" beforeClick ]&nbsp;&nbsp;" + treeNode.name );
+    return (treeNode.click != false);
+}
+function onClick(event, treeId, treeNode, clickFlag) {
+	
+	
+	parent.window.document.getElementById('IBody').src=treeNode.page;
+     //  window.location.replace(treeNode.page)
+
+}		
+function showLog(str) {
+    if (!log) log = $("#log");
+    log.append("<li class='"+className+"'>"+str+"</li>");
+    if(log.children("li").length > 8) {
+        log.get(0).removeChild(log.children("li")[0]);
+    }
+}
+function getTime() {
+    var now= new Date(),
+    h=now.getHours(),
+    m=now.getMinutes(),
+    s=now.getSeconds();
+    return (h+":"+m+":"+s);
+}
+	</SCRIPT>
+
+
+
+<div class="content_wrap">
+	<div class="zTreeDemoBackground left">
+		<ul id="treeDemo" class="ztree"></ul>
+	</div>
+	
+	
+</div>
+

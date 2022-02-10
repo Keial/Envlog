@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/Calibration.css' />
+    <title>Calibration</title>
+</head>
+<body>
+    <form method="post">
+        <div class="grid-container">
+            <div class="grid1">
+                <div class="mainInit">Initial Calibration</div>
+                <div class="EnaCalibra">
+                    <div >
+                        <input type="checkbox" id="EnableCal1-1" name="EnableCalibration" value="true" />
+                        <label id="EnableCal1-2" for="EnableCal1-1">Enable</label>
+                    </div>
+                </div>
+                <div class="ZeroFact">
+                    <div >
+                        <input type="checkbox" id="ZeroOff1-1" name="ZeroOffset" value="true" />
+                        <label id="ZeroOff1-2" for="ZeroOff1-1">Zero Offset</label>
+                    </div>
+                    <div >
+                        <input id="ZeroOff1-3" name="Zero"/>
+                    </div>
+                </div>
+                <div class="mainFact">
+                    <div >
+                        <input type="checkbox" id="Factor1-1" name="FactorInit" value="true" />
+                        <label id="Factor1-2" for="Factor1-1">Factor</label>
+                    </div>
+                    <div >
+                        <input id="Factor1-3" name="FactorInput"/>
+                    </div>
+                </div>
+            </div>
+            <div class="grid2">
+                <div class="mainValidation">Validation Limits</div>
+                <div class="mainSpanDiff">
+                    <select id="SpanDiff1-1" name="SpanDiff" >
+                        <option value="SpanDiff">SpanDiff(% of Range)</option>
+                    </select>
+                    <input id="SpanDiff1-2" name="SpanDiffInput"/>
+                </div>
+                <div class="mainZerodiff">
+                    <label id="Zerodiff1-1" for="">Zero Diff(% of Range)</label>
+                    <input id="Zerodiff1-2" name="ZeroDiff"/>
+                </div>
+                <div class="mainZerodiff">
+                    <label id="FactorLow1-1" for="">Factor Low</label>
+                    <input id="FactorLow1-2" name="FactorLow"/>
+                </div>
+                <div class="mainZerodiff">
+                    <label id="FactorHigh1-1" for="">Factor High</label>
+                    <input id="FactorHigh1-2" name="FactorHigh"/>
+                </div>
+            </div>
+            <div class="grid3">
+                <div class="CalibrationFail">Calibration Fail Action</div>
+                <div class="SMStoOut">
+                    <input type="checkbox" id="SMStoOut1-1" name="SetMonitorStatusToOut" value="true" />
+                    <label id="SMStoOut1-2" for="SMStoOut1-1">Set Monitor Status ToOutCal If Outside a Validation Limit</label>
+                </div>
+                <div class="SMStoOk">
+                    <input type="checkbox" id="SMStoOk1-1" name="SetMonitorStatusToOk" value="true" />
+                    <label id="SMStoOk1-2" for="SMStoOk1-1">Set Monitor Status ToOk_CalibFail" And""OutCal"If Outside 2 X the Validation Limit
+                            <br><dd>(Must Enable OK_XXX Status Under OPtions)</dd></label>
+                </div>
+                <div class="DigitalOut">
+                    <label id="DigitalOut1-1" for="">Digital Output</label>
+                    <select id="DigitalOut1-2" name="DigitalOutput" >
+                        <option value="None">(None)</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="mainUseEPA">
+                    <div class="CalibrationFail">Calibration Fail Action</div>
+                    <div class="SetCHStatToOOCZero">
+                        <div>
+                            <input type="checkbox" id="SetCHStatToOOCZero1-1" name="SetChannelStatusToOOCZero" value="true" />
+                            <label id="SetCHStatToOOCZero1-2" for="SetCHStatToOOCZero1-1">Set Channel Status To OOC (Out of Control)After the Zero or Span Limit is Exceeded for this number of consecutive calibrations.</label>
+                        </div>
+                        <div>
+                            <input id="SetCHStatToOOCZero1-3" name="SetChannelStatusToOOCZeroInput"/>
+                        </div>
+                    </div>
+                    <div class="SetCHStatToOOCNumber">
+                        <div>
+                            <input type="checkbox" id="SetCHStatToOOCNumber1-1" name="SetChannelStatusToOOCNumber" value="true" />
+                            <label id="SetCHStatToOOCNumber1-2" for="SetCHStatToOOCNumber1-1">Set Channel Status To OOC if this number of hours has elapsed since the last calibrations.</label>
+                        </div>
+                        <div>
+                            <input id="SetCHStatToOOCNumber1-3" name="SetChannelStatusToOOCNumberInput"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid4">
+                <div class="mainAddcalibration">Add Calibration</div>
+                <div class="SelectSeq">
+                    <label id="SelectSeq1-1" for="">Select Sequence</label>
+                    <select id="SelectSeq1-2" name="SelectSequence" >
+                        <option value="AutoCal">AutoCal</option>
+                        <option value="Cal">Cal</option>
+                        <option value="-">-</option>
+                    </select>
+                </div>
+                <button id="addCalibration" type="submit">Add Calibration</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

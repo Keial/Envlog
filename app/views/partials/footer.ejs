@@ -1,0 +1,16 @@
+<div class="footer">
+    <h1 id="version-text">Project1 : Version Minus Alpha 0.001</h1>
+    <h1> <span id="datetime"></span></h1>
+</div>
+
+<script>
+    async function timeDate() { 
+      const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+  "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];  
+    const dt = new Date();
+    document.getElementById("datetime").innerHTML = (("0"+dt.getDate()).slice(-2)) +" "+ monthNames[dt.getMonth()] +" "+ (dt.getFullYear())+" "+
+    dt.toLocaleTimeString();
+    }
+    timeDate();
+    setInterval(timeDate,1000);
+    </script>

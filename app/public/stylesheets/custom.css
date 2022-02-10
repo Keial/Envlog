@@ -1,0 +1,94 @@
+
+body{
+    background: grey;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+    height: 100vh;
+    min-width: 600px;
+    
+    
+}
+header {
+   width: 100%;
+   position: sticky;
+   top: 0;
+   z-index: 1;
+ 
+}
+header ul {
+    background-image: linear-gradient(to bottom,rgb(248, 251, 255),rgb(213,226,242));
+}
+.nav-item{
+    font-size: 12px;
+}
+
+.tab-file-list{
+    
+    background-image: linear-gradient(to bottom,rgb(248, 251, 255),rgb(213,226,242));
+    border-bottom-right-radius: 20px;
+    list-style: none;
+    padding: 0;
+    font-size: 28px;
+    margin: 0;
+    
+    
+    
+}
+.tab-file-list li{
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    
+    display: inline-block;
+    width:80px;
+    height: 80px;
+    text-align: center;
+    box-sizing: border-box;
+   left:0;
+    
+}
+.tab-file-list a{
+    text-decoration: none;   
+    
+}
+.tab-file-list a:hover{
+    opacity: 1;  
+}
+header h1{
+    font-size: 12px;
+}
+.footer h1{
+    font-size: 12px;
+}
+
+.footer{
+    grid-area: footer;
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    width: 100%;
+    border: 2px solid rgb(193,193,193);
+    position: sticky;
+    bottom: 0;
+    background-image: linear-gradient(to bottom,rgb(248, 251, 255),rgb(213,226,242));
+}
+.footer h1{
+    display: inline;
+    
+}
+#version-text{
+    float: left;
+    padding-left: 20px;
+    margin: 0;
+    right: 0;
+    
+}
+#datetime{
+    float: right;
+    padding-right:  20px;
+    right: 0;
+    
+}
+
+

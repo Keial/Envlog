@@ -1,0 +1,28 @@
+.AdCh{
+    
+    background-image: linear-gradient(to bottom,rgb(248, 250, 252),rgb(206, 225, 248));
+    text-align: left;
+    font-size: 18px;
+    padding: 15px 0 50px 10px ;
+    height: 100vh;
+}
+.NameAddChannel{
+    padding: 15px 0px 15px 0;
+}
+#NameAddChannel1-1{
+    padding: 0px 50px 0px 0;
+}
+#NameAddChannel1-2{
+    width: 200px ;
+}
+#NameAddChannel1-3{
+    margin-left: 20px;
+    font-size: 12px;
+    padding: 5px 18px;
+    background-color: rgb(233, 233, 230);
+    transition-duration: 0.5s;
+}
+#NameAddChannel1-3:hover {
+    background-color: #ff9b04;
+    color: rgb(0, 0, 0);
+}

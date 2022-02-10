@@ -1,0 +1,565 @@
+
+/*กำหนดค่า Grid*/
+.Grid1 { grid-area: header; }
+.Grid2 { grid-area: menu; }
+.Grid3 { grid-area: main; }
+.Grid4 { grid-area: right; }
+.Grid5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 1px;
+  background-image: linear-gradient(to bottom,rgb(248, 250, 252),rgb(206, 225, 248));
+  padding: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 7fr 7fr;
+}
+
+.grid-container > div {
+    background-image: linear-gradient(to bottom,rgb(248, 250, 252),rgb(206, 225, 248));
+  text-align: center;
+  padding: 0px 0;
+  font-size: 30px;
+}
+
+/* กำหนด headTab */
+#headTab {
+    list-style-type: none;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    border-right:1px solid #bbb;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: rgb(167, 179, 178)
+}
+
+/*Grid2*/
+
+/* จัดตำแหน่งGrid2 */
+#name1-1{
+    padding-right: 70px;
+}
+#name1-2{
+    width: 250px;
+}
+#CHadd1-1{
+    padding-right: 47px;
+}
+#CHadd1-2{
+    width: 258px;
+}
+#Unit1-1{
+    padding-right: 76px;
+}
+#Unit1-2{
+    width: 250px;
+}
+#Serial1-1{
+    padding-right: 63px;
+}
+#Serial1-2{
+    width: 250px;
+}
+#LowR1-1{
+    padding-right: 47.5px;
+}
+#LowR1-2{
+    width: 250px;
+}
+#HighR1-1{
+    padding-right: 46px;
+}
+#HighR1-2{
+    width: 250px;
+}
+#Thres1-1{
+    padding-right: 42.5px;
+}
+#Thres1-2{
+    width: 258.5px;
+}
+#ThresH1-1{
+    padding-right: 20px;
+}
+#ThresH1-2{
+    width: 258px;
+}
+#Pollu1-1{
+    padding-right: 36px;
+}
+#Pollu1-2{
+    width: 250px;
+}
+#ViewF1-1{
+    padding-right: 41.5px;
+}
+#ViewF1-2{
+    width: 258px;
+    background-color:rgb(233, 227, 227) ;
+    color: black;
+}
+#StateCh1-1{
+    padding-right: 74px;
+}
+#StateCh1-2{
+    width: 258px;
+    background-color:rgb(233, 227, 227);
+    color: black;
+}
+#AverageCh1-1{
+    padding-right: 61px;
+}
+#AverageCh1-2{
+    width: 258px;
+    background-color:rgb(233, 227, 227) ;
+    color: black;
+}
+#POC1-1{
+    padding-right: 69px;
+}
+#POC1-2{
+    width: 258.5px;
+    background-color:rgb(233, 227, 227) ;
+    color: black;
+}
+#MetCode1-1{
+    padding-right: 32px;
+}
+#MetCode1-2{
+    width: 250px;
+}
+#ELV1-1{
+    padding-right: 70px;
+}
+#ELV1-2{
+    width: 251px;
+}
+#ELVAver1-1{
+    padding-right: 11px;
+}
+#ELVAver1-2{
+    width: 250px;
+}
+#DailyELV1-1{
+    padding-right: 46px;
+}
+#DailyELV1-2{
+    width: 250px;
+}
+/* จัดรูปแบบGrid2 */
+.name{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.CHadd{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.Unit{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.Serial{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.LowR{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.HighR{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.Thres{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.ThresH{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.Pollu{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.ViewF{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.StateCh{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.AverageCh{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.FTP{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+    margin-left: 3px;
+    margin-right: 2px;
+    margin-top: 1px;
+    margin-bottom: 3px;
+}
+.FTP p{
+    font-size: 10px;
+    padding-left: 2px;
+    padding-bottom: 3px;
+    text-align: left;
+}
+.POC{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.MetCode{
+    font-size: 10px;
+    padding: 2px;
+    padding-top: 3px;
+    padding-bottom: 8px;
+    text-align: left;
+}
+.Direc{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+    margin-left: 3px;
+    margin-right: 2px;
+    margin-top: 2px;
+}
+.Direc p{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.ELV{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.ELVAver{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.DailyELV{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+    padding-bottom: 14px;
+}
+/*Grid3*/
+.Grid3{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+    margin-bottom: 0px;
+}
+/* จัดรูปแบบGrid3 */
+.Analyz{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.CH-CH{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.EuCon{
+    font-size: 10px;
+    padding: 5px 2px;
+    text-align: left;
+}
+.LowVolt{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.HighVolt{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.LinearCor{
+    font-size: 10px;
+    padding-left: 2px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    text-align: left;
+}
+.AB{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.AB p {
+    display: inline;
+}
+.LineR{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.LineR div {
+    display: inline;
+}
+.WebDis{
+    font-size: 10px;
+    padding: 20px 2px;
+    text-align: left;
+}
+#Save{
+    font-size: 12px;
+    padding: 10px 20px;
+    margin-right: 0px;
+    margin-top: 35px;
+    background-color: rgb(233, 233, 230);
+    transition-duration: 0.5s;
+}
+#Save:hover {
+    background-color: #ff9b04;
+    color: rgb(0, 0, 0);
+  }
+
+/* จัดตำแหน่งGrid3 */
+#Analyz1-1{
+    padding-right: 25px;
+}
+#Analyz1-2{
+    width: 250px;
+}
+#CH-CH1-1{
+    padding-right: 28px;
+}
+#CH-CH1-2{
+    width: 250px;
+}
+#EuCon1-2{
+    padding: 2px;
+}
+#LowVolt1-1{
+    padding-right: 24px;
+}
+#LowVolt1-2{
+    width: 242px;
+}
+#HighVolt1-1{
+    padding-right: 22.5px;
+}
+#HighVolt1-2{
+    width: 242px;
+}
+#LinearA{
+    padding-left: 2px;
+    padding-top: 0;
+    padding-bottom: 2px;
+    padding-right: 90px;
+}
+#LinearB{
+    padding-left: 90px;
+    padding-top: 0;
+    padding-bottom: 2px;
+    padding-right: 2px;
+}
+#LiA1-1{
+    padding-right: 2px;
+}
+#LiA1-2{
+    padding-right: 1px;
+}
+
+
+/*Grid4*/
+.Grid4{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+    margin-left: 2px;
+    margin-bottom: 0px;
+}
+/* จัดรูปแบบGrid4 */
+.LowVa{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.RangeDe{
+    font-size: 10px;
+    padding: 5px 2px;
+    text-align: left;
+}
+.ByPV{
+    font-size: 10px;
+    padding: 5px 2px;
+    text-align: left;
+}
+.ByPV div{
+    display: inline;
+}
+.HighVa{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.ChangePer{
+    font-size: 10px;
+    padding: 5px 2px;
+    text-align: left;
+}
+.PercenTageVal{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.setUnipolar{
+    font-size: 10px;
+    padding: 5px 2px;
+    text-align: left;
+}
+.setValue{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+    margin-left:  5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+.CheckConstant{
+    font-size: 10px;
+    padding: 5px 2px;
+    text-align: left;
+}
+.ByPVC{
+    font-size: 10px;
+    padding: 5px 2px;
+    text-align: left;
+}
+
+.SamplesCon{
+    font-size: 10px;
+    padding: 5px 2px;
+    text-align: left;
+}
+.ValueCon{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.ABy{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.ABy div{
+    display: inline;
+}
+.TimesIns{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+    margin-left: 3px ;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    font-size: 10px;
+    padding: 5px 2px;
+    text-align: left;
+}
+.TimesIns div{
+    display: inline;
+}
+
+/* จัดตำแหน่งGrid4 */
+#LowVa1-1{
+    padding-right: 48px;
+}
+#LowVa1-2{
+    width: 250px;
+}
+#HighVa1-1{
+    padding-right: 46px;
+}
+#HighVa1-2{
+    width: 250px;
+}
+#PercenTageVal1-1{
+    padding-right: 22px;
+}
+#PercenTageVal1-2{
+    width: 258.5px;
+}
+#SamplesCon1-1{
+    padding-right: 20px;
+    padding-top: 5px;
+}
+#SamplesCon1-2{
+    width: 250px;
+}
+#ValueCon1-1{
+    padding-right: 49.5px;
+}
+#ValueCon1-2{
+    width: 250px;
+}
+
+/*Grid5*/
+.Grid5{
+    border: rgba(30, 104, 165, 0.781) solid 2px;
+    margin-bottom: 150px;
+    margin-top: 3px;
+}
+/* จัดรูปแบบGrid5 */
+.Ena{
+    font-size: 10px;
+    padding: 2px;
+    text-align: left;
+}
+.Ena div{
+    display: inline;
+}
+.Formularmessage{
+    width: 100%;
+    text-align: left;
+    padding-left: 5px;
+   
+
+}
+.textbox{
+    font-size: 16px;
+    width: 98%;
+    margin: 0;
+}
+/* จัดตำแหน่งGrid5 */
+#FormularBTN1-1{
+    font-size: 10px;
+    padding: 5px 10px;
+    margin-left: 800px;
+}

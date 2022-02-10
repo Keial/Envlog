@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/Pcd76t.css' />
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+        <div class="grid-container">
+<!-------------------------------------------Grid1----------------------------------------------------------------->
+            <div class="grid1">
+                <div class="SiteID">Site ID: 1</div>
+                <div class="SiteName">
+                    <label id="SiteName1-1" for="">Site Name: </label>
+                    <input id="SiteName1-2" name="SiteNamePcd"/>
+                </div>
+                <div class="SiteCode">
+                    <label id="SiteCode1-1" for="">Site Code: </label>
+                    <input id="SiteCode1-2" name="SiteCode"/>
+                </div>
+                <div class="SiteType">
+                    <label id="SiteType1-1" for="">Site Type: </label>
+                    <select id="SiteType1-2" name="SiteType" >
+                        <option value="AQM">AQM(Air Quality Monitoring)</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <div class="SiteLocation">
+                    <label id="SiteLocation1-1" for="">Location: </label>
+                    <input id="SiteLocation1-2" name="SiteLocation"/>
+                </div>
+                <div class="SiteLatitude">
+                    <label id="SiteLatitude1-1" for="">Latitude: </label>
+                    <input id="SiteLatitude1-2" name="SiteLatitude"/>
+                </div>
+                <div class="SiteLongtitude">
+                    <label id="SiteLongtitude1-1" for="">Longtitude: </label>
+                    <input id="SiteLongtitude1-2" name="SiteLongtitude"/>
+                </div>
+                <div class="SiteElevation">
+                    <label id="SiteElevation1-1" for="">Elevation: </label>
+                    <input id="SiteElevation1-2" name="SiteElevation"/>
+                </div>
+                <div class="SID2File">
+                    <div>
+                        <input type="checkbox" id="SID2File1-1" name="SaveInstantData2File" value="true" />
+                        <label id="SID2File1-2" for="SID2File1-1">Save Instant Data to Files Every</label>
+                    </div>
+                    <div>
+                        <input id="SID2File1-3" name="SaveInstantData2FileInput"/>
+                        <p id="SID2File1-4">Seconds</p>
+                    </div>
+                </div>
+                <div class="SID4Calib">
+                    <div>
+                        <input type="checkbox" id="SID4Calib1-1" name="SaveInstantData4Calibration" value="true" />
+                        <label id="SID4Calib1-2" for="SID4Calib1-1">Save Instant Data for Calibration</label>
+                    </div>
+                    <div>
+                        <input id="SID4Calib1-3" name="SaveInstantData4CalibrationInput"/>
+                        <p id="SID4Calib1-4">Days Back</p>
+                    </div>
+                </div>
+                <div class="CalcAPos">
+                    <div class="mainCalcAPos">Calc. averages (>1 minute and <=60 minutes) using</div>
+                    <div class="CalcAPossitive">
+                        <div>
+                            <input type="checkbox" id="InstantCalc1-1" name="InstantCalc" value="true" />
+                            <label id="InstantCalc1-2" for="InstantCalc1-1">Instant</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="1Mins1-1" name="OneMinsCalc" value="true" />
+                            <label id="1Mins1-2" for="1Mins1-1">1 Minute</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="CalcANeg">
+                    <div class="mainCalcANeg">Calc. averages (>1 minute and <=60 minutes) using</div>
+                    <div class="CalcANegative">
+                        <div>
+                            <input type="checkbox" id="InstantCalcN1-1" name="InstantCalcN" value="true" />
+                            <label id="InstantCalcN1-2" for="InstantCalcN1-1">Instant</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="1MinsN1-1" name="OneMinsCalcN" value="true" />
+                            <label id="1MinsN1-2" for="1MinsN1-1">1 Minute</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="60MinsN1-1" name="SixtyMinsCalcN" value="true" />
+                            <label id="60MinsN1-2" for="60MinsN1-1">60 Minute</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-------------------------------------------Grid2----------------------------------------------------------------->
+            <div class="grid2">
+                <div class="mainBTLinMinute">Basic Timebase List (In Minutes)</div>
+                <div class="TimebaseinMinute">
+                    <label id="TimebaseinMinute1-1" for="">Timebase</label>
+                    <select id="TimebaseinMinute1-2" name="TimebaseinMinute" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <button id="addMinute" type="submit">Add</button>
+                </div>  
+            </div>
+<!-------------------------------------------Grid3----------------------------------------------------------------->
+            <div class="grid3">
+                <div class="mainBTLinSecond">Basic Timebase List (In Seconds)</div>
+                <div class="TimebaseinSecond">
+                    <label id="TimebaseinSecond1-1" for="">Timebase</label>
+                    <select id="TimebaseinSecond1-2" name="TimebaseinSecond" >
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <button id="addSecond" type="submit">Add</button>
+                </div>  
+            </div>
+        </div>
+    </form>
+</body>
+</html>

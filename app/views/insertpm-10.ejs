@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/insertpm-10.css' />
+    <title>Document</title>
+</head>
+<body>
+    <form method="post">
+    <div class="grid-container">
+<!-------------------------------------Grid1------------------------------------------------>
+        <div class="Grid1">
+            <ul id="headTab">
+                <li><a class="active" href="#channel">Channel</a></li>
+                <li><a href="#Digital">Digital Monitor Status Validation</a></li>
+                <li><a href="#I/O">I/O Validation</a></li>
+                <li><a href="#alarms">Alarms</a></li>
+            </ul>
+        </div>
+<!-------------------------------------Grid2------------------------------------------------>
+        <div class="Grid2">
+            <div class="name">
+                <label id="name1-1" for="">Name</label>
+                <input id="name1-2" name="Name" />
+            </div>
+            <div class="CHadd">
+                <label id="CHadd1-1" for="">Ch.Address</label>
+                <select id="CHadd1-2" name="ChAddress" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="3">4</option>
+                    <option value="3">5</option>
+                    <option value="3">6</option>
+                    <option value="3">7</option>
+                    <option value="3">8</option>
+                    <option value="3">9</option>
+                    <option value="3">10</option>
+                    <option value="3">11</option>
+                    <option value="3">12</option>
+                    <option value="3">13</option>
+                    <option value="3">14</option>
+                    <option value="3">15</option>
+                    <option value="3">16</option>
+                </select>
+            </div>
+            <div class="Unit">
+                <label id="Unit1-1" for="">Unit</label>
+                <input id="Unit1-2" name="Unit"/>
+            </div>
+            <div class="Serial">
+                <label id="Serial1-1" for="">Serial #</label>
+                <input id="Serial1-2" name="Serial"/>
+            </div>
+            <div class="LowR">
+                <label id="LowR1-1" for="">Low Range</label>
+                <input id="LowR1-2" name="LowRange"/>
+            </div>
+            <div class="HighR">
+                <label id="HighR1-1" for="">High Range</label>
+                <input id="HighR1-2" name="HightRange"/>
+            </div>
+            <div class="Thres">
+                <label id="Thres1-1" for="">Threshold %</label>
+                <select id="Thres1-2" name="Threshold" >
+                    <option value="0">0</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="75">75</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+            <div class="ThresH">
+                <label id="ThresH1-1" for="">24Hr Threshold %</label>
+                <select id="ThresH1-2" name="ThresH24" >
+                    <option value="0">0</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="75">75</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+            <div class="Pollu">
+                <label id="Pollu1-1" for="">Pollutant Type</label>
+                <input id="Pollu1-2" name="PollutantType"/>
+           </div>
+            <div class="ViewF">
+                <label id="ViewF1-1" for="">View Format</label>
+                <select id="ViewF1-2" name="ViewFormat" >
+                    <option value="#">#</option>
+                    <option value="%">%</option>
+                    <option value="*">*</option>
+                </select>
+            </div>
+            <div class="StateCh">
+                <label id="StateCh1-1" for="">State</label>
+                <select id="StateCh1-2" name="StateCh" >
+                    <option value="On">On</option>
+                    <option value="Off">Off</option>
+                </select>
+            </div>
+            <div class="AverageCh">
+                <label id="AverageCh1-1" for="">Average</label>
+                <select id="AverageCh1-2" name="AverageCh" >
+                    <option value="Mean">Mean</option>
+                    <option value="Average">Average</option>
+                </select>
+            </div>
+            <div>
+                <div class="FTP">
+                    <p>FTP AQCSV EPA</p>
+                    <div class="POC">
+                        <label id="POC1-1" for="">POC</label>
+                        <select id="POC1-2" name="POC" >
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <div class="MetCode">
+                            <label id="MetCode1-1" for="">Method Code</label>
+                            <input id="MetCode1-2" name="MetCode"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="Direc">
+                    <p>Directive</p>
+                    <div class="ELV">
+                        <label id="ELV1-1" for="">ELV</label>
+                        <input id="ELV1-2" name="ELV"/>
+                    </div>
+                    <div class="ELVAver">
+                        <label id="ELVAver1-1" for="">ELV Average (min)</label>
+                        <input id="ELVAver1-2" name="ELVAverage"/>
+                    </div>
+                    <div class="DailyELV">
+                        <label id="DailyELV1-1" for="">Daily ELV</label>
+                        <input id="DailyELV1-2" name="DailyELV"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-------------------------------------Grid3------------------------------------------------> 
+        <div class="Grid3">
+            <div class="Analyz">
+                <label id="Analyz1-1" for="">Analyzer</label>
+                <select id="Analyz1-2" name="Analyzer" >
+                    <option value="ADAM 4017">ADAM 4017</option>
+                    <option value="ADAM 4057">ADAM 4057</option>
+                </select>
+            </div>
+            <div class="CH-CH">
+                <label id="CH-CH1-1" for="">Channel</label>
+                <select id="CH-CH1-2" name="Channel" >
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="EuCon">
+                <input type="checkbox" id="EuCon1-1" name="EUconversion" value="true" />
+                <label id="EuCon1-2" for="">EU Conversion</label>
+            </div>
+            <div class="LowVolt">
+                <label id="LowVolt1-1" for="">Low Volt</label>
+                <input id="LowVolt1-2" name="LowVolt"/>
+            </div>
+            <div class="HighVolt">
+                <label id="HighVolt1-1" for="">High Volt</label>
+                <input id="HighVolt1-2" name="HighVolt"/>
+            </div>
+            <div class="LinearCor">Linear Correction</div>
+            <div class="AB">
+                <p id="LinearA">A</p>
+                <p id="LinearB">B</p>
+            </div>
+            <div class="LineR">
+                <div >
+                    <label id="LiA1-1" for=""> </label>
+                    <input id="LiA1-2" name="A"/>
+                </div>
+                <div>
+                    <label id="LiB1-1" for="">X + </label>
+                    <input id="LiB1-2" name="B"/>
+                </div>
+            </div>
+            <div class="WebDis">
+                <input type="checkbox" id="WebDis1-1" name="Webdisplay" value="true" />
+                <label id="WebDis1-2" for="WebDis1-1">Web display</label>
+            </div>
+            <button id="Save" type="submit">Save</button>    
+        </div>
+<!-------------------------------------Grid4------------------------------------------------>
+        <div class="Grid4">
+            <div class="LinearCor">Validation Limits</div>
+            <div class="RangeDe">
+                <input type="checkbox" id="RangeDe1-1" name="RangeDeviation" value="true" />
+                <label id="RangeDe1-2" for="RangeDe1-1">Range Deviation</label>
+            </div>
+            <div class="ByPV">
+                <div>
+                    <input type="radio" id="ByPercentage1-1" name="ByPV"value="0"  />
+                    <label id="ByPercentage1-2" for="ByPercentage1-1">By Percentage</label>
+                </div>
+                <div>
+                    <input type="radio" id="ByValue1-1" name="ByPV" value="1"  />
+                    <label id="ByValue1-2" for="ByValue1-1">By Value</label>
+                </div>
+            </div>
+            <div class="LowVa">
+                <label id="LowVa1-1" for="">Low</label>
+                <input id="LowVa1-2" name="LowValidation"/>
+            </div>
+            <div class="HighVa">
+                <label id="HighVa1-1" for="">High</label>
+                <input id="HighVa1-2" name="HighValidation"/>
+            </div>
+            <div class="ChangePer">
+                <input type="checkbox" id="ChangePer1-1" name="ChangePercen" value="true" />
+                <label id="ChangePer1-2" for="ChangePer1-1">Change as Percen of Range</label>
+            </div>
+            <div class="PercenTageVal">
+                <label id="PercenTageVal1-1" for="">Percentage</label>
+                <select id="PercenTageVal1-2" name="Percentage" >
+                    <option value="0">0</option>
+                    <option value="25">25</option>
+                    <option value="50">50</option>
+                    <option value="75">75</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+            <div class="setUnipolar">
+                <input type="checkbox" id="setUnipolar1-1" name="Unipolar" value="true" />
+                <label id="setUnipolar1-2" for="setUnipolar1-1">Unipolar (Set Negative Value to 0</label>
+            </div>
+            <div class="setValue">
+                <div class="CheckConstant">
+                    <input type="checkbox" id="CheckConstant1-1" name="Constant" value="true" />
+                    <label id="CheckConstant1-2" for="CheckConstant1-1">Constant</label>
+                </div>
+                <div class="ByPVC">
+                    <div class="ABy">
+                        <div>
+                            <input type="radio" id="ByPercentage1-1" name="PV"value="0"  />
+                            <label id="ByPercentage1-2" for="ByPercentage1-1">By Percentage</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="ByValue1-1" name="PV" value="1"  />
+                            <label id="ByValue1-2" for="ByValue1-1">By Value</label>
+                        </div>
+                    </div>
+                    <div class="SamplesCon">
+                        <label id="SamplesCon1-1" for=""># of Samples</label>
+                        <input id="SamplesCon1-2" name="Samples"/>
+                    </div>
+                    <div class="ValueCon">
+                        <label id="ValueCon1-1" for="">Value</label>
+                        <input id="ValueCon1-2" name="Value"/>
+                    </div>
+                </div>
+                <div class="TimesIns">
+                    <div>
+                        <input type="radio" id="ByTimebase1-1" name="By"value="0"  />
+                        <label id="ByTimebase1-2" for="ByTimebase1-1">By Timebase</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="ByInstant1-1" name="By" value="1"  />
+                        <label id="ByInstant1-2" for="ByInstant1-1">By Instant</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-------------------------------------Grid5------------------------------------------------>
+        <div class="Grid5">
+            <div class="Ena">
+                <div >
+                    <input type="checkbox" id="Enable" name="Enable" value="true" />
+                    <label id="Ena1-2" for="Ena1-1">Enable</label>
+                </div>
+                <div >
+                    <input type="button" id="FormularBTN1-1" name="" value="Formular" />
+                </div>
+            </div>
+            <div class="Formularmessage">
+                <textarea class="textbox" name="message" rows="5" cols="100"></textarea>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
